@@ -1,0 +1,20 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment files — copy .env.example and fill in your values
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Private keys — never commit
+keys/
+secrets/
+*.pem
+*.key
+
+# Build output
+frontend/dist/
+coverage/

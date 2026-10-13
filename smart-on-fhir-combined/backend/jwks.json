@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS384",
+      "kid": "restoreme-poc-key-1",
+      "n": "xHodwOoyutfjarHxVZu8L_HL7VystBr9HvxfN7MWdcNx6m8DLX4InyRUUaS9s4yXizMU6hyH0nYyxgd2hjRYCGXNaxlC5Stt8gLjkB4qe8JyRrbooWdep9FvjpgUnS5qMqD3e5lc7t9wMuIX0Rx33kxg-kd8DOwchdm5gNoWLAO95Nofqw1ZVhk04TDAifmgz8qiHfGQb_IQWDRymxrIPRsQ8clwbceZoGdv5k-Pa_OMMGpOdd2BTnzOENXrFndSyK8ecDTUvVs6HDQC1Nr8KDHwLyw49oWJAylNkjYbrRFVxxd2Yw8tfCbbl5sgV9hWCSBBh4bfts-ja1t8eYrVrQ",
+      "e": "AQAB"
+    }
+  ]
+}

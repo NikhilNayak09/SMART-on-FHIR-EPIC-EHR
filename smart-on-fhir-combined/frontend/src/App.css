@@ -1,0 +1,76 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fa; color: #1a1a2e; }
+
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  background: #1a1a2e; color: white; padding: 0 24px; height: 56px;
+}
+.nav-brand { font-weight: 700; font-size: 1.1rem; color: #4fc3f7; }
+.nav-links { display: flex; gap: 8px; }
+.nav-links a { color: #ccc; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 0.9rem; }
+.nav-links a:hover, .nav-links a.active { background: #4fc3f7; color: #1a1a2e; font-weight: 600; }
+
+.main { max-width: 960px; margin: 32px auto; padding: 0 16px; }
+
+.card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; }
+.card h2 { font-size: 1.3rem; margin-bottom: 16px; color: #1a1a2e; }
+.card h3 { font-size: 1rem; margin-bottom: 12px; color: #444; }
+
+.btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 0.95rem; font-weight: 600; }
+.btn-primary { background: #4fc3f7; color: #1a1a2e; }
+.btn-primary:hover { background: #29b6f6; }
+.btn-danger { background: #ef5350; color: white; }
+.btn-danger:hover { background: #e53935; }
+.btn-success { background: #66bb6a; color: white; }
+.btn-success:hover { background: #43a047; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+.badge-green { background: #e8f5e9; color: #2e7d32; }
+.badge-red { background: #ffebee; color: #c62828; }
+.badge-blue { background: #e3f2fd; color: #1565c0; }
+.badge-gray { background: #f5f5f5; color: #555; }
+
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: #333; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 0.95rem;
+}
+.form-group input:focus, .form-group select:focus { outline: none; border-color: #4fc3f7; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.alert { padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 0.9rem; }
+.alert-success { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+.alert-error { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+.alert-info { background: #e3f2fd; color: #1565c0; border: 1px solid #90caf9; }
+
+.table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.table th { background: #f5f7fa; padding: 10px 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #e0e0e0; }
+.table td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; }
+.table tr:hover td { background: #fafafa; cursor: pointer; }
+
+.fhir-toggle { margin-top: 12px; }
+.fhir-toggle summary { cursor: pointer; color: #4fc3f7; font-size: 0.85rem; font-weight: 600; padding: 4px 0; }
+.fhir-json { background: #1a1a2e; color: #a5d6a7; padding: 16px; border-radius: 8px; font-size: 0.78rem; overflow-x: auto; margin-top: 8px; white-space: pre-wrap; }
+
+.loading { text-align: center; padding: 40px; color: #888; }
+.section-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 12px; }
+
+.patient-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.patient-avatar { width: 56px; height: 56px; border-radius: 50%; background: #4fc3f7; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #1a1a2e; }
+.patient-name { font-size: 1.4rem; font-weight: 700; }
+.patient-meta { font-size: 0.85rem; color: #666; margin-top: 2px; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+.stat-card { background: #f5f7fa; border-radius: 10px; padding: 16px; text-align: center; }
+.stat-value { font-size: 1.8rem; font-weight: 700; color: #1a1a2e; }
+.stat-label { font-size: 0.8rem; color: #888; margin-top: 4px; }
+
+.tag { display: inline-block; background: #e3f2fd; color: #1565c0; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; margin: 2px; }
+
+.expandable-row td { padding: 0 12px 12px; }
+.expandable-content { background: #f9f9f9; border-radius: 8px; padding: 12px; font-size: 0.85rem; }
